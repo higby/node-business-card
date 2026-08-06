@@ -1,30 +1,14 @@
 #!/usr/bin/env node
 
-import boxen from "boxen";
-import chalk from "chalk";
+// Generated using sindresorhus/boxen
+const card = `
+  ┌ Branden Higby ────────────────────────────────┐
+  │                                               │
+  │   web       https://www.higby.io              │
+  │   email     mailto:b@higby.io                 │
+  │   git       https://github.com/higby          │
+  │                                               │
+  └───────────────────────────────────────────────┘
+`; 
 
-let higby = [
-  {
-    title: "www",
-    href: "      https://www.higby.io",
-  },
-  {
-    title: "email",
-    href: "    mailto:branden@higby.io",
-  },
-  {
-    title: "mastodon",
-    href: " https://front-end.social/@higby",
-  },
-];
-
-console.log(
-  boxen(
-    higby.map((link) => `${chalk.bold(link.title)} ${link.href}`).join("\n"),
-    {
-      padding: 1,
-      title: "branden higby",
-      titleAlignment: "left",
-    }
-  )
-);
+console.log(card);
