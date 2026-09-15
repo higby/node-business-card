@@ -1,12 +1,12 @@
 #!/usr/bin/env node
+import { styleText } from 'node:util';
 
-// Generated using sindresorhus/boxen
 const card = `
   ┌ Branden Higby ────────────────────────────────┐
   │                                               │
-  │   web       https://www.higby.io              │
-  │   email     mailto:b@higby.io                 │
-  │   git       https://github.com/higby          │
+  │   ${styleText('bold', 'web')}       https://www.higby.io              │
+  │   ${styleText('bold', 'email')}     mailto:b@higby.io                 │
+  │   ${styleText('bold', 'git')}       https://github.com/higby          │
   │                                               │
   └───────────────────────────────────────────────┘
 `; 

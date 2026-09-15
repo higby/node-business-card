@@ -1,8 +1,8 @@
 {
   "name": "higby",
-  "version": "3.0.0",
-  "bin": "index.js",
-  "author": "Branden Higby",
+  "version": "3.1.0",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "bin": "index.js",
+  "author": "Branden Higby <b@higby.io> (https://www.higby.io)"
 }
